@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: start.sh
+  web: slackin --interval 30000 $SLACK_TEAM $SLACK_TOKEN
